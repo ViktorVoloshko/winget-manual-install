@@ -9,7 +9,7 @@ First we need to install dependencies. We have to install 2 packages to make eve
  
  (For 1.4.10173 we need Microsoft.UI.Xaml.2.7 but in future version may change.)
  
- To get it go to https://www.nuget.org/packages/Microsoft.UI.Xaml/#versions-body-tab and click on latest compatible version. I.e. we need 2.**7** so latest compatible is 2.**7**.3 at the moment (and also 2.**7**.4 preview but we don't want that in our case). 2.**8**.X won't be compatible since they're Microsoft.UI.Xaml.2.**8**.
+ To get it go to https://www.nuget.org/packages/Microsoft.UI.Xaml/#versions-body-tab and click on latest compatible version. I.e. we need 2.**7** so latest compatible is 2.**7**.3 at the moment (and also 2.**7**.4 preview but you never want to install a preview, trust me). 2.**8**.X won't be compatible since they're Microsoft.UI.Xaml.2.**8**.
   
   Now click on "Download package" on right side of page. Now we got a weird `.nupkg` file, what we should do with it? Change the extension to `.zip` (you should have extensions enabled in Explorer) then open it as usual archive. You'll see some folders and files inside. We need only one which is in `tools/AppX/<your_architecture>/Release` folder (for x64 it'll be `tools/AppX/x64/Release`. Just copy that file in root of C volume and rename it to `xaml.appx`. We'll get back to it later.
   - Microsoft.VCLibs.140.00.UWPDesktop
