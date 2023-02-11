@@ -14,7 +14,7 @@ First we need to install dependencies. We have to install 2 packages to make eve
   Now click on "Download package" on right side of page. Now we got a weird `.nupkg` file, what we should do with it? Change the extension to `.zip` (you should have extensions enabled in Explorer) then open it as usual archive. You'll see some folders and files inside. We need only one which is in `tools/AppX/<your_architecture>/Release` folder (for x64 it'll be `tools/AppX/x64/Release`. Just copy that file in root of C volume and rename it to `xaml.appx`. We'll get back to it later.
   - Microsoft.VCLibs.140.00.UWPDesktop
  
- This one is easier to get. Go to https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/cpp/libraries/c-runtime-packages-desktop-bridge and download one for your architecture (for x64 it'll be `Microsoft.VCLibs.x64.14.00.Desktop.appx`). Rename it to vcl.appx and move to root of C volume.
+ This one is easier to get. Go to https://learn.microsoft.com/en-us/troubleshoot/developer/visualstudio/cpp/libraries/c-runtime-packages-desktop-bridge and download one for your architecture (for x64 it'll be `Microsoft.VCLibs.x64.14.00.Desktop.appx`). Rename it to `vcl.appx` and move to root of C volume.
 
 Now time to get Microsoft.DesktopAppInstaller itself. Go to https://github.com/microsoft/winget-cli/releases/latest and download file with `.msixbundle` extension and file with `.xml` extension. Rename first to `dai.msixbundle` and second to `lic.xml` and move them to root of C volume too.
 
