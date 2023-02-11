@@ -2,7 +2,7 @@
 
 **This guide assumes you don't have MS Store and don't want to have it. If this is not your way then use it to install winget. On LTSC you can get it if you run `wsreset -i` in PowerShell (maybe you'll need to run it twice).**
 
-**DISCLAIMER: You could use Add-AppxPackage instead of Add-AppxProvisionedPackage for dependencies but you can't for winget itself because package will be not licensed and won't work. But I still recommend you to use everywhere. Also I renaming and moving files here to make commands work for everyone, you could use your own paths and relative too, it'll work.**
+**DISCLAIMER: You could use `Add-AppxPackage` instead of `Add-AppxProvisionedPackage` for dependencies but you can't for winget itself because package will be not licensed and won't work. But I still recommend you to use `Add-AppxProvisionedPackage` everywhere. Also I renaming and moving files here to make commands work for everyone, you could use your own paths and relative too, it'll work.**
 
 First we need to install dependencies. We have to install 2 packages to make everything work.
  - Microsoft.UI.Xaml
