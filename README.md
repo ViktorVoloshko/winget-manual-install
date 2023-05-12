@@ -4,6 +4,8 @@
 
 **You could use `Add-AppxPackage` instead of `Add-AppxProvisionedPackage` for dependencies but you can't for winget itself because package will be not licensed and won't work. But I still recommend you to use `Add-AppxProvisionedPackage` everywhere. Also I'm renaming and moving files here to make commands work for everyone, if you're experienced with PS (or any command shell actually) you could use your own paths and relative too, it'll work.**
 
+Automated script by negimox: https://github.com/negimox/winget_auto_install
+
 First we need to install dependencies. We have to install 2 packages to make everything work.
  - Microsoft.UI.Xaml
  
