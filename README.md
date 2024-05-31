@@ -32,6 +32,6 @@ Add-AppxProvisionedPackage -Online -PackagePath "C:\vcl.appx" -SkipLicense
 Add-AppxProvisionedPackage -Online -PackagePath "C:\dai.msixbundle" -LicensePath "C:\lic.xml"
 ```
 
-But they didn't work on LTSC 2019 when I checked it so first one is recommendedsince it's more universal.
+But they didn't work on LTSC 2019 when I checked it so first one is recommended since it's more universal.
 
 Now open PowerShell as normal user and type `winget`. If no error occurs then everything went well. If there is an error then something messed up (probably with dependencies). Problem is that Add-AppxProvisionedPackage doesn't show you anything if something went wrong (-Verbose won't help too). In this case try running `Add-AppxPackage -Path "C:\dai.msixbundle"`, unlike Add-AppxProvisionedPackage it'll show you what dependency missing and you can install it and then run `Add-AppxProvisionedPackage -Online -PackagePath "C:\dai.msixbundle" -LicensePath "C:\lic.xml"` again. At least I hope this will help.
